@@ -9,34 +9,22 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.rushb</groupId>
-	<artifactId>yahtzee</artifactId>
+	<artifactId>joueur</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>yahtzee</name>
+	<name>joueur</name>
 	<description>Yahtzee project from group RushB</description>
-	<modules>
-        <module>proba</module>
-        <module>appariement</module>
-        <module>joueur</module>
-        <module>partie</module>
-    </modules>
-	<packaging>pom</packaging>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-webflux</artifactId>
+			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>io.projectreactor</groupId>
-			<artifactId>reactor-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
