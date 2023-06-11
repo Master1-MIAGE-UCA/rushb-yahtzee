@@ -33,15 +33,25 @@ public class Grille {
     }
 
     public void afficherGrille() {
-        for (Map.Entry<Combinaison, Integer> entry : combinaisons.entrySet()) {
-            Combinaison combinaison = entry.getKey();
-            Integer score = entry.getValue();
-            System.out.println(combinaison.getNom() + ": " + (score == null ? "non défini" : score));
+        List<String> ordreCombinaisons = Arrays.asList("1", "2", "3", "4", "5", "6", "Brelan", "Carré", "Full", "Petite suite", "Grande suite", "Yam's", "Chance");
+
+        for (String nomCombinaison : ordreCombinaisons) {
+            for (Map.Entry<Combinaison, Integer> entry : combinaisons.entrySet()) {
+                Combinaison combinaison = entry.getKey();
+                if (combinaison.getNom().equals(nomCombinaison)) {
+                    Integer score = entry.getValue();
+                    if (score == 0) {
+                        System.out.println(combinaison.getNom() + ": Supprimée");
+                    } else {
+                        System.out.println(combinaison.getNom() + ": " + score);
+                    }
+                }
+            }
         }
     }
 
     public void supprimerCombinaison(Combinaison combinaison) {
-        this.combinaisons.remove(combinaison);
+        this.combinaisons.put(combinaison, 0);
     }
 
     public ArrayList<Combinaison> getCombinaisons() {
@@ -54,6 +64,16 @@ public class Grille {
 
     public void ajouterScore(Combinaison combinaison, int score) {
         this.combinaisons.put(combinaison, score);
+    }
+
+    public int calculerScoreTotal() {
+        int scoreTotal = 0;
+        for (Integer score : this.combinaisons.values()) {
+            if (score != null) {
+                scoreTotal += score;
+            }
+        }
+        return scoreTotal;
     }
 }
 

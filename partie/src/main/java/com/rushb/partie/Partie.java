@@ -28,9 +28,30 @@ public class Partie {
             for (Joueur joueur : this.joueurs) {
                 System.out.println("\nC'est le tour de " + joueur.getNom());
                 joueur.jouerTour();
-                System.out.println("Les dés finaux de " + joueur.getNom() + " sont : ");
-                Utils.afficherDes(joueur.getDes());
             }
         }
+
+        // Afficher les résultats une fois que tous les tours sont terminés
+        afficherResultats();
+    }
+
+    public void afficherResultats() {
+        System.out.println("\n ======================== Récapitulatif des scores : ========================");
+        Joueur gagnant = null;
+        int meilleurScore = 0;
+
+        for (Joueur joueur : this.joueurs) {
+            joueur.afficherGrilleFinale();  // Affiche la grille finale du joueur
+
+            int score = joueur.getGrille().calculerScoreTotal();
+            System.out.println("\nScore final " + joueur.getNom() + " : " + score);
+
+            if (score > meilleurScore) {
+                meilleurScore = score;
+                gagnant = joueur;
+            }
+        }
+
+        System.out.println("\nLe gagnant est " + gagnant.getNom() + " avec un score de " + meilleurScore);
     }
 }

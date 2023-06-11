@@ -1,13 +1,7 @@
 package com.rushb.joueur;
 
-import com.rushb.partie.Utils;
-
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
-
-import java.util.ArrayList;
 
 public class Joueur {
     private String nom;
@@ -89,5 +83,10 @@ public class Joueur {
     public Grille getGrille() {
         return grille;
     }
+    public void afficherGrilleFinale() {
+        System.out.println("\nGrille finale " + this.nom + " :");
+        this.grille.afficherGrille();
+    }
+
 }
 
