@@ -2,11 +2,9 @@ package com.rushb.joueur;
 
 import java.util.Arrays;
 
-import java.util.Arrays;
-
 public class Combinaison {
-    private String nom;
-    private int score;
+    private final String nom;
+    private final int score;
 
     public Combinaison(String nom, int score) {
         this.nom = nom;

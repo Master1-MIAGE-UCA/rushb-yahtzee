@@ -2,10 +2,8 @@ package com.rushb.joueur;
 
 import java.util.*;
 
-import java.util.*;
-
 public class Grille {
-    private Map<Combinaison, Integer> combinaisons;
+    private final Map<Combinaison, Integer> combinaisons;
 
     public Grille() {
         this.combinaisons = new HashMap<>();

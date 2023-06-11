@@ -1,14 +1,13 @@
 package com.rushb.partie;
 
-import com.rushb.joueur.Combinaison;
 import com.rushb.joueur.Joueur;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Partie {
-    private List<Joueur> joueurs;
-    private int tours;
+    private final List<Joueur> joueurs;
+    private final int tours;
 
     public Partie(int tours) {
         this.tours = tours;

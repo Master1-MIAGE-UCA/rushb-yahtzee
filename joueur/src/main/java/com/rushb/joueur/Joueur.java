@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Joueur {
-    private String nom;
-    private int[] des;
-    private Grille grille;
+    private final String nom;
+    private final int[] des;
+    private final Grille grille;
 
     public Joueur(String nom) {
         this.nom = nom;
@@ -70,10 +70,6 @@ public class Joueur {
             this.grille.supprimerCombinaison(plusFaible);
             System.out.println(this.nom + " a supprimé " + plusFaible.getNom());
         }
-    }
-
-    public int[] getDes() {
-        return this.des;
     }
 
     public String getNom() {

@@ -1,6 +1,5 @@
 package com.rushb.appariement;
 
-import com.rushb.joueur.Grille;
 import com.rushb.joueur.Joueur;
 import com.rushb.partie.Partie;
 
