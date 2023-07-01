@@ -14,6 +14,10 @@ En accord avec la partie gestion de projet, les livraisons ont pris beaucoup de 
 
 https://docs.google.com/document/d/1h2CdVx8HMrsOgcHZwimyDZlGJ9zQrZ8l7nG_ltR2dAw/edit?usp=drivesdk  
 
+### Lien vers la vidéo
+
+https://www.youtube.com/watch?v=lLoAP9F9wPs
+
 ### Arborescence
 ```
 │   .gitignore
