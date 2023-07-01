@@ -1,5 +1,5 @@
 # Projet YAHTZEE - Equipe RUSH B
-###Requirements: Java 17, Docker
+### Requirements: Java 17, Docker
 
 ### General informations
 
