@@ -1,7 +1,7 @@
 # Projet YAHTZEE - Equipe RUSH B
-###Requirements: Java 17, Docker
+### Requirements: Java 17, Docker
 
-###General informations
+### General informations
 
 CI/CD via Travis  
 You may use **Docker** to build and run the application (take a look at the Dockerfile)  
