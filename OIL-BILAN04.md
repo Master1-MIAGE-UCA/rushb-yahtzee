@@ -9,7 +9,11 @@ Spring Boot a été utilisé pour construire ce projet.
 ###Tests unitaires et d'integration:
 Les tests ont été setup, mais manque de temps du coté de Jarod pour écrire les tests.
 ###Methodologie agile/deliveries
-En accord avec la partie gestion de projet, les livraisons ont pris beaucoup de retard dû à un manque de compréhension du jeu ce qui a entrainé des User Story biaisée au cours de nos Sprint 
+En accord avec la partie gestion de projet, les livraisons ont pris beaucoup de retard dû à un manque de compréhension du jeu ce qui a entrainé des User Story biaisée au cours de nos Sprint
+### Lien vers le bilan réponses aux questions
+
+https://docs.google.com/document/d/1h2CdVx8HMrsOgcHZwimyDZlGJ9zQrZ8l7nG_ltR2dAw/edit?usp=drivesdk  
+
 ###Arborescence
 ```
 │   .gitignore
