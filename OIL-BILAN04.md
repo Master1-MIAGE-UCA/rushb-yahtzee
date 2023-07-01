@@ -7,10 +7,9 @@ Le projet est correctement lié à Travis pour le CI/CD.
 ###Spring:
 Spring Boot a été utilisé pour construire ce projet.
 ###Tests unitaires et d'integration:
-Les tests ont été setup, mais manque de temps pour écrire les tests.
+Les tests ont été setup, mais manque de temps du coté de Jarod pour écrire les tests.
 ###Methodologie agile/deliveries
-Pour cause de manque d'organisation dans l'equipe et malentendu avec d'autres projets (notamment le cours de Mme Mirbel), nous n'avons pas ecrit les OIL-BILAN01, 02 et 03.
-De meme, il n'y pas eu de tags ajoutés à nos commits permettant de suivre l'évolution du projet.
+En accord avec la partie gestion de projet, les livraisons ont pris beaucoup de retard dû à un manque de compréhension du jeu ce qui a entrainé des User Story biaisée au cours de nos Sprint 
 ###Arborescence
 ```
 │   .gitignore
@@ -204,11 +203,17 @@ De meme, il n'y pas eu de tags ajoutés à nos commits permettant de suivre l'é
 │   │   │           application.properties
 │   │   │
 │   │   └───test
+│   │       ├───integration
+│   │           └───java
+│   │       │       └───com
+│   │       │           └───rushb
+│   │       │               └───partie
+│   │       │                       PartieIntegrationTest.java
 │   │       └───java
 │   │           └───com
 │   │               └───rushb
 │   │                   └───partie
-│   │                           PartieApplicationTests.java
+│   │                           PartieTest.java
 │   │
 │   └───target
 │       │   dependencies.txt

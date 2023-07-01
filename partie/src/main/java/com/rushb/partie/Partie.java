@@ -9,8 +9,8 @@ public class Partie {
     private final List<Joueur> joueurs;
     private final int tours;
 
-    public Partie(int tours) {
-        this.tours = tours;
+    public Partie() {
+        this.tours = 13;
         this.joueurs = new ArrayList<>();
     }
 
@@ -52,5 +52,9 @@ public class Partie {
         }
 
         System.out.println("\nLe gagnant est " + gagnant.getNom() + " avec un score de " + meilleurScore);
+    }
+
+    public List<Joueur> getJoueurs() {
+        return joueurs;
     }
 }
